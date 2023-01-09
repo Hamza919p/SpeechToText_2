@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/languages"
+        android:title="@string/languages"
+        android:icon="@drawable/ic_language"/>
+
+    <item android:id="@+id/saved_notes"
+        android:title="@string/saved_notes"
+        android:icon="@drawable/ic_saved_notes"/>
+
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:menuCategory="secondary"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>

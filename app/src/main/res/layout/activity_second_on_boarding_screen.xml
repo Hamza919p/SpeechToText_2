@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.SecondOnBoardingScreenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/color_primary"
+        >
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_we_are_glad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/we_re_glad_that_you_are_here"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_lady"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_400sdp"
+            android:src="@drawable/ic_intro2_lady"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_started"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            android:text="@string/lets_get_started"
+            android:textColor="@color/color_primary"
+            app:cornerRadius="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:onClick="letsGetStarted"
+            android:textAlignment="textStart"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:drawableEnd="@drawable/ic_forward_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>

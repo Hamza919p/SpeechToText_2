@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_help"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:onClick="askForHelp"
+            app:drawableStartCompat="@drawable/ic_help" />
+
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:onClick="openPrivacyPolicy"
+            app:drawableStartCompat="@drawable/ic_privacy_policy"
+            />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            android:onClick="openFeedback"
+            app:drawableStartCompat="@drawable/ic_feedback"
+            />
+
+        <TextView
+            android:id="@+id/tv_share_app"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_app"
+            android:onClick="openShareApp"
+            app:drawableStartCompat="@drawable/ic_share_app"
+            />
+
+        <TextView
+            android:id="@+id/tv_rate_us"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_us"
+            android:onClick="openRateUs"
+            app:drawableStartCompat="@drawable/ic_rate_us"
+            />
+
+        <TextView
+            android:id="@+id/tv_more_app"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/more_app"
+            android:onClick="openMoreApp"
+            app:drawableStartCompat="@drawable/ic_more_app"
+            />
+
+        <TextView
+            android:id="@+id/tv_about"
+            style="@style/Settings_Fragment_Text_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:onClick="openAbout"
+            app:drawableStartCompat="@drawable/ic_about"
+            />
+    </LinearLayout>
+
+
+
+</layout>
